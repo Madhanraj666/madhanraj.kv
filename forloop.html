@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b>for loop</b></h1>
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <h1><b>Do while</b></h1>
+    <p id="a3"></p>
+    <p id="a4"></p>
+    <script>
+        let text6 = ["madhan", "kishore", "mahesh", "chanthru"];
+        document.getElementById("a1").innerHTML = text6;
+        //it used for loop
+        let i = 0;
+        let text2 = ["madhan", "kishore", "mahesh", "chanthru"];
+        let text = ""
+        //loop syntax
+        for (let i = 0; i < 4; i++) {
+            text += "We are name is " + text2[i] + "<br>"
+        }
+        document.getElementById("a2").innerHTML = text;
+        let text7 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        document.getElementById("a3").innerHTML = text7;
+        //do while loop
+        var a = 1;
+        var text4 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var text4 = ""
+        //loop syntax
+        do {
+            text4 += "we are roll number is " +   a+ "<br>";
+            a++;
+        }
+        while (a < 5);
+        document.getElementById("a4").innerHTML = text4;
+    </script>
+</body>
+
+</html>

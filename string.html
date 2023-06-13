@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-image: -moz-linear-gradient(red,yellow,blue,skyblue);
+        }
+    </style>
+</head>
+<body text="black">
+    <h1>STRING length</h1>
+    <P id="demo"></P>
+    <h1>STRING slice</h1>
+    <P id="demo1"></P>
+    <h1>STRING uppercase</h1>
+    <P id="demo2"></P>
+    <h1>STRING lowercase</h1>
+    <P id="demo3"></P>
+    <h1>STRING substr</h1>
+    <P id="demo4"></P>
+    <h1>STRING concat</h1>
+    <P id="demo5"></P>
+    <br>
+    <br><br>
+    <h1>ARRAY length</h1>
+    <P id="1"></P>
+    <h1>ARRAY slice</h1>
+    <P id="2"></P>
+    <h1>ARRAY join</h1>
+    <P id="3"></P>
+    <h1>ARRAY pop</h1>
+    <P id="4"></P>
+    <h1>ARRAY push</h1>
+    <P id="5"></P>
+    <script>
+        let text="basfgibnafgiagfbefbigsdb";
+        document.getElementById("demo").innerHTML=text.length;
+        let text1="basfgibnafgiagfbefbigsdb";
+        document.getElementById("demo1").innerHTML=text1.slice(0,5);
+        let text2="basfgibnafgiagfbefbigsdb";
+        document.getElementById("demo2").innerHTML=text2.toUpperCase();
+        let text3="basfgibnafgiagfbefbigsdb";
+        document.getElementById("demo3").innerHTML=text3.toLowerCase();
+        let text4="basfgibnafgiagfbefbigsdb";
+        document.getElementById("demo4").innerHTML=text4.substr(3,6);
+        let text5="basfgibnaf";
+        let text6="giagfbefbigsdb";
+        document.getElementById("demo5").innerHTML=text5.concat("",text6);
+        let t1 =["red","black","green","white"];
+        document.getElementById("1").innerHTML=t1.length;
+        let t2 =["red","black","green","white"];
+        document.getElementById("2").innerHTML=t2.slice(2,4);
+        let t3 =["red","black","green","white"];
+        document.getElementById("3").innerHTML=t3.join("-");
+        let t4 =["red","black","green","white"];
+        document.getElementById("4").innerHTML=t4.pop(1,3);
+        let t5 =["red","black","green","white"];
+        document.getElementById("5").innerHTML=t5.push("yellow");
+    </script>
+</body>
+</html>

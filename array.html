@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+     <style>
+          body {
+               background-color: aquamarine;
+               text-align: center;
+          }
+     </style>
+</head>
+
+<body>
+     <h1>highest number</h1>
+     <p id="1"></p>
+     <h1>length</h1>
+     <p id="2"></p>
+     <h1>push</h1>
+     <p id="3"></p>
+     <p id="h"></p>
+     <h1>pop</h1>
+     <p id="4"></p>
+     <p id="r"></p>
+     <h1>unshift</h1>
+     <p id="5"></p>
+     <p id="t"></p>
+     <h1>shift</h1>
+     <p id="6"></p>
+     <p id="y"></p>
+     <h1>slice</h1>
+     <p id="7"></p>
+     <p id="u"></p>
+     <h1>join</h1>
+     <p id="8"></p>
+     <p id="i"></p>
+     <h1>indexof</h1>
+     <p id="9"></p>
+     <h1>sum</h1>
+     <p id="10"></p>
+     <h1>sort</h1>
+     <p id="11"></p>
+     <p id="p"></p>
+
+
+     <script>
+          let text = [1, 30, 347, 73, 90, 26, 4, 7, 92];
+          document.getElementById("1").innerHTML = highest(text);
+          function highest(arr) {
+               return Math.max.apply(null, arr);
+          }
+          let text1 = [1, 30, 347, 73, 90, 26, 4, 7, 92];
+          document.getElementById("2").innerHTML = text1;
+          document.getElementById("2").innerHTML = text1.length;
+          let text2 = [1, 30, 347, 73, 90, 26, 4, 7, 92];
+          document.getElementById("3").innerHTML = text2;
+          text2.push(79);
+          document.getElementById("h").innerHTML = text2;
+          let text3 = [1, 30, 347, 73, 90, 26, 4, 7, 92, 79];
+          document.getElementById("4").innerHTML = text3;
+          text3.pop(79);
+          document.getElementById("r").innerHTML = text3;
+          let text4 = [1, 30, 347, 73, 90, 26, 4, 7, 92, 79];
+          document.getElementById("5").innerHTML = text4;
+          text4.unshift(100);
+          document.getElementById("t").innerHTML = text4;
+          let text5 = [1, 30, 347, 73, 90, 26, 4, 7, 92, 79];
+          document.getElementById("6").innerHTML = text5;
+          text5.shift(1);
+          document.getElementById("y").innerHTML = text5;
+          let text6 = ["madhan", "kishore", "mahesh", "chanthru"];
+          document.getElementById("7").innerHTML = text6;
+          document.getElementById("u").innerHTML = text6.slice(1);
+          let text7 = ["madhan", "kishore", "mahesh", "chanthru"];
+          document.getElementById("8").innerHTML = text7;
+          document.getElementById("i").innerHTML = text7.join("-");
+          let text8 = ["madhan", "kishore", "mahesh", "chanthru"];
+          let index = text8.indexOf("mahesh");
+          document.getElementById("9").innerHTML = index;
+          let text9 = [27, 34, 4, 48];
+          let sum = text9[0] + text9[1] + text9[2] + text9[3];
+          document.getElementById("10").innerHTML = sum;
+          let text10 = ["madhan", "kishore", "mahesh", "chanthru"];
+          document.getElementById("11").innerHTML = text10;
+          text10.sort();
+          document.getElementById("p").innerHTML = text10;
+
+
+     </script>
+</body>
+
+</html>
